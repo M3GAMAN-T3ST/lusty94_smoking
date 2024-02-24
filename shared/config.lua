@@ -19,7 +19,7 @@ Config.DebugPoly = false
 
 
 Config.Blips = {
-    {title = 'Smoking Shop', colour = 5, id = 648, coords = vector3(172.19, -1336.0, 29.3), scale = 0.7, useblip = true}, -- BLIP FOR SMOKING SHOP
+    {title = 'Smoking Shop', colour = 5, id = 648, coords = vector3(172.19, -1336.0, 29.3), scale = 0.7, useblip = false}, -- BLIP FOR SMOKING SHOP
 }
 
 
@@ -46,14 +46,14 @@ Config.CoreSettings = {
         SmokeVape = 10000, -- time it takes in MS to smoke a vape
     },
     Shop = {
-        Type = 'qb', -- support for qb-inventory shops, jim-shops and ox_inventory shops - IF USING OX INVENTORY YOU MUST CREATE YOUR OWN SHOP INSIDE OX_INVENTORY TO ACCESS THE SUPPLIES STORE USING THE SNIPPET PROVIDED IN THE README FILE
+        Type = 'qb', -- support for ps-inventory shops, jim-shops and ox_inventory shops - IF USING OX INVENTORY YOU MUST CREATE YOUR OWN SHOP INSIDE OX_INVENTORY TO ACCESS THE SUPPLIES STORE USING THE SNIPPET PROVIDED IN THE README FILE
         --use 'qb' for qb-shops
         --use 'jim' for jim-shops
         --use 'ox' for ox_inventory shops
     },
-    Inventory = { --support for qb-inventory and ox_inventory
+    Inventory = { --support for ps-inventory and ox_inventory
         Type = 'qb',
-        --use 'qb' for qb-inventory
+        --use 'qb' for ps-inventory
         --use 'ox' for ox_inventory
     },
     EventNames = {
@@ -83,7 +83,7 @@ Config.CoreSettings = {
 Config.InteractionLocations = {-- if using ox_inventory you can ignore this section but make sure you have included the ox_inventory shops snippet found in the readme file to be able to obtain the items
     Store = {
         Location = {
-            Location = vector3(170.03, -1337.09, 29.3), -- location of boxzone
+            Location = vector3(0, 0, 0), -- location of boxzone
             Width = 1.5, --width of boxzone
             Height = 1.5, -- height of boxzone
             Heading = 100, -- heading of boxzone
